@@ -1,0 +1,193 @@
+2026-03-17 16:03:09 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:03:09 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:03:09 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:08:26 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:08:26 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:08:26 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:08:47 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:08:47 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:08:47 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:09:17 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:09:17 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:09:17 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:09:45 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:09:45 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:09:45 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:10:19 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:10:19 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:10:19 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:11:00 - __main__ - INFO - 处理文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:11:00 - app.core.file_processor - INFO - 根据扩展名 .csv 选择读取方法
+2026-03-17 16:11:00 - app.core.file_processor - INFO - 开始读取CSV文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:11:00 - app.core.file_processor - INFO - 使用 utf-8 编码读取成功，共 10 行，6 列
+2026-03-17 16:11:00 - app.core.data_analyzer - INFO - 数据分析器初始化完成，数据规模: 10行 x 6列
+2026-03-17 16:11:00 - app.core.file_processor - INFO - 开始生成数据概要
+2026-03-17 16:11:00 - app.core.file_processor - INFO - 数据概要生成完成，共 6 列
+2026-03-17 16:11:00 - __main__ - INFO - ✅ 文件上传成功！共 10 行，6 列
+2026-03-17 16:11:04 - __main__ - INFO - 用户查询: 
+2026-03-17 16:11:04 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:11:04 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:11:06 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 203
+2026-03-17 16:11:06 - __main__ - INFO - 解析结果: {'action': 'summary'}
+2026-03-17 16:11:06 - app.core.data_analyzer - INFO - 执行分析指令: summary
+2026-03-17 16:11:06 - app.core.data_analyzer - INFO - 生成数据概要
+2026-03-17 16:11:06 - app.core.data_analyzer - INFO - 数据概要生成完成
+2026-03-17 16:11:44 - __main__ - INFO - 用户查询: 
+2026-03-17 16:11:44 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:11:44 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:11:45 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 203
+2026-03-17 16:11:45 - __main__ - INFO - 解析结果: {'action': 'summary'}
+2026-03-17 16:11:45 - app.core.data_analyzer - INFO - 执行分析指令: summary
+2026-03-17 16:11:45 - app.core.data_analyzer - INFO - 生成数据概要
+2026-03-17 16:11:45 - app.core.data_analyzer - INFO - 数据概要生成完成
+2026-03-17 16:12:37 - __main__ - INFO - 用户查询: 筛选出年龄大于30岁的数据
+2026-03-17 16:12:37 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:12:37 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：筛选出年龄大于30岁的数据\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:12:39 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 229
+2026-03-17 16:12:39 - __main__ - INFO - 解析结果: {'action': 'filter', 'column': '年龄', 'operator': '>', 'value': 30}
+2026-03-17 16:12:39 - app.core.data_analyzer - INFO - 执行分析指令: filter
+2026-03-17 16:12:39 - app.core.data_analyzer - INFO - 筛选数据: 年龄 > 30
+2026-03-17 16:12:39 - app.core.data_analyzer - INFO - 筛选完成，得到 6 行
+2026-03-17 16:12:56 - __main__ - INFO - 用户查询: 计算每个部门的平均工资
+2026-03-17 16:12:56 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:12:56 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：计算每个部门的平均工资\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:12:58 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 231
+2026-03-17 16:12:58 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': ['部门'], 'agg_column': '工资', 'agg_func': 'mean'}
+2026-03-17 16:12:58 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:12:58 - app.core.data_analyzer - INFO - 聚合数据: 按 ['部门'] 分组，计算 工资 的 mean
+2026-03-17 16:12:58 - app.core.data_analyzer - INFO - 聚合完成，得到 3 条结果
+2026-03-17 16:13:26 - __main__ - INFO - 用户查询: 找出工资大于10000的员工
+2026-03-17 16:13:26 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:13:26 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：找出工资大于10000的员工\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:13:27 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 229
+2026-03-17 16:13:27 - __main__ - INFO - 解析结果: {'action': 'filter', 'column': '工资', 'operator': '>', 'value': 10000}
+2026-03-17 16:13:27 - app.core.data_analyzer - INFO - 执行分析指令: filter
+2026-03-17 16:13:27 - app.core.data_analyzer - INFO - 筛选数据: 工资 > 10000
+2026-03-17 16:13:27 - app.core.data_analyzer - INFO - 筛选完成，得到 6 行
+2026-03-17 16:13:36 - __main__ - INFO - 用户查询: 显示这些记录
+2026-03-17 16:13:36 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:13:36 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：显示这些记录\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:13:38 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 207
+2026-03-17 16:13:38 - __main__ - INFO - 解析结果: {'action': 'summary'}
+2026-03-17 16:13:38 - app.core.data_analyzer - INFO - 执行分析指令: summary
+2026-03-17 16:13:38 - app.core.data_analyzer - INFO - 生成数据概要
+2026-03-17 16:13:38 - app.core.data_analyzer - INFO - 数据概要生成完成
+2026-03-17 16:13:40 - __main__ - INFO - 用户查询: 显示这些记录
+2026-03-17 16:13:40 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:13:40 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：显示这些记录\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:13:41 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 207
+2026-03-17 16:13:41 - __main__ - INFO - 解析结果: {'action': 'summary'}
+2026-03-17 16:13:41 - app.core.data_analyzer - INFO - 执行分析指令: summary
+2026-03-17 16:13:41 - app.core.data_analyzer - INFO - 生成数据概要
+2026-03-17 16:13:41 - app.core.data_analyzer - INFO - 数据概要生成完成
+2026-03-17 16:15:49 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:15:49 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:15:49 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:16:04 - __main__ - INFO - 处理文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:16:04 - app.core.file_processor - INFO - 根据扩展名 .csv 选择读取方法
+2026-03-17 16:16:04 - app.core.file_processor - INFO - 开始读取CSV文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:16:04 - app.core.file_processor - INFO - 使用 utf-8 编码读取成功，共 10 行，6 列
+2026-03-17 16:16:04 - app.core.data_analyzer - INFO - 数据分析器初始化完成，数据规模: 10行 x 6列
+2026-03-17 16:16:04 - app.core.file_processor - INFO - 开始生成数据概要
+2026-03-17 16:16:04 - app.core.file_processor - INFO - 数据概要生成完成，共 6 列
+2026-03-17 16:16:04 - __main__ - INFO - ✅ 文件上传成功！共 10 行，6 列
+2026-03-17 16:16:22 - __main__ - INFO - 用户查询: 找出工资大于10000的员工
+2026-03-17 16:16:22 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:16:22 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：找出工资大于10000的员工\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:16:24 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 229
+2026-03-17 16:16:24 - __main__ - INFO - 解析结果: {'action': 'filter', 'column': '工资', 'operator': '>', 'value': 10000}
+2026-03-17 16:16:24 - app.core.data_analyzer - INFO - 执行分析指令: filter
+2026-03-17 16:16:24 - app.core.data_analyzer - INFO - 筛选数据: 工资 > 10000
+2026-03-17 16:16:24 - app.core.data_analyzer - INFO - 筛选完成，得到 6 行
+2026-03-17 16:16:58 - __main__ - INFO - 处理文件: C:\Users\Smilling\AppData\Local\Temp\gradio\22e1e01530a222579fc535ccbefd39f154aaa777\house_sales.csv
+2026-03-17 16:16:58 - app.core.file_processor - INFO - 根据扩展名 .csv 选择读取方法
+2026-03-17 16:16:58 - app.core.file_processor - INFO - 开始读取CSV文件: C:\Users\Smilling\AppData\Local\Temp\gradio\22e1e01530a222579fc535ccbefd39f154aaa777\house_sales.csv
+2026-03-17 16:16:59 - app.core.file_processor - INFO - 使用 utf-8 编码读取成功，共 106118 行，12 列
+2026-03-17 16:16:59 - app.core.data_analyzer - INFO - 数据分析器初始化完成，数据规模: 106118行 x 12列
+2026-03-17 16:16:59 - app.core.file_processor - INFO - 开始生成数据概要
+2026-03-17 16:16:59 - app.core.file_processor - INFO - 数据概要生成完成，共 12 列
+2026-03-17 16:16:59 - __main__ - INFO - ✅ 文件上传成功！共 106118 行，12 列
+2026-03-17 16:17:13 - __main__ - INFO - 用户查询: 统计一共有多少条数据
+2026-03-17 16:17:13 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:17:13 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['city', 'address', 'area', 'floor', 'name', 'price', 'province', 'rooms', 'toward', 'unit', 'year', 'origin_url']\n\n    用户问题：统计一共有多少条数据\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:17:15 - __main__ - INFO - 用户查询: 统计一共有多少条数据
+2026-03-17 16:17:15 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:17:15 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['city', 'address', 'area', 'floor', 'name', 'price', 'province', 'rooms', 'toward', 'unit', 'year', 'origin_url']\n\n    用户问题：统计一共有多少条数据\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:17:15 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 249
+2026-03-17 16:17:15 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': [], 'agg_column': 'city', 'agg_func': 'count'}
+2026-03-17 16:17:15 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:17:15 - app.core.data_analyzer - INFO - 聚合数据: 按 [] 分组，计算 city 的 count
+2026-03-17 16:17:15 - app.core.data_analyzer - INFO - 聚合完成，得到 1 条结果
+2026-03-17 16:17:16 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 229
+2026-03-17 16:17:16 - __main__ - INFO - 解析结果: {'action': 'summary'}
+2026-03-17 16:17:16 - app.core.data_analyzer - INFO - 执行分析指令: summary
+2026-03-17 16:17:16 - app.core.data_analyzer - INFO - 生成数据概要
+2026-03-17 16:17:16 - app.core.data_analyzer - INFO - 数据概要生成完成
+2026-03-17 16:17:33 - __main__ - INFO - 用户查询: 有多少合肥的数据
+2026-03-17 16:17:33 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:17:33 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['city', 'address', 'area', 'floor', 'name', 'price', 'province', 'rooms', 'toward', 'unit', 'year', 'origin_url']\n\n    用户问题：有多少合肥的数据\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:17:35 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 245
+2026-03-17 16:17:35 - __main__ - INFO - 解析结果: {'action': 'filter', 'column': 'city', 'operator': '==', 'value': '合肥'}
+2026-03-17 16:17:35 - app.core.data_analyzer - INFO - 执行分析指令: filter
+2026-03-17 16:17:35 - app.core.data_analyzer - INFO - 筛选数据: city == 合肥
+2026-03-17 16:17:35 - app.core.data_analyzer - INFO - 筛选完成，得到 194 行
+2026-03-17 16:23:18 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:23:18 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:23:18 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:32:27 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:32:27 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:32:27 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:33:18 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:33:18 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:33:18 - __main__ - INFO - Gradio应用初始化完成
+2026-03-17 16:34:11 - __main__ - INFO - 处理文件: C:\Users\Smilling\AppData\Local\Temp\gradio\22e1e01530a222579fc535ccbefd39f154aaa777\house_sales.csv
+2026-03-17 16:34:11 - app.core.file_processor - INFO - 根据扩展名 .csv 选择读取方法
+2026-03-17 16:34:11 - app.core.file_processor - INFO - 开始读取CSV文件: C:\Users\Smilling\AppData\Local\Temp\gradio\22e1e01530a222579fc535ccbefd39f154aaa777\house_sales.csv
+2026-03-17 16:34:11 - app.core.file_processor - INFO - 使用 utf-8 编码读取成功，共 106118 行，12 列
+2026-03-17 16:34:11 - app.core.data_analyzer - INFO - 数据分析器初始化完成，数据规模: 106118行 x 12列
+2026-03-17 16:34:11 - app.core.file_processor - INFO - 开始生成数据概要
+2026-03-17 16:34:12 - app.core.file_processor - INFO - 数据概要生成完成，共 12 列
+2026-03-17 16:34:12 - __main__ - INFO - ✅ 文件上传成功！共 106118 行，12 列
+2026-03-17 16:34:27 - __main__ - INFO - 用户查询: 柱状图显示每个地区的平均房价
+2026-03-17 16:34:27 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:34:27 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['city', 'address', 'area', 'floor', 'name', 'price', 'province', 'rooms', 'toward', 'unit', 'year', 'origin_url']\n\n    用户问题：柱状图显示每个地区的平均房价\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:34:30 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 254
+2026-03-17 16:34:30 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': ['area'], 'agg_column': 'price', 'agg_func': 'mean'}
+2026-03-17 16:34:30 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:34:30 - app.core.data_analyzer - INFO - 聚合数据: 按 ['area'] 分组，计算 price 的 mean
+2026-03-17 16:34:30 - app.core.data_analyzer - ERROR - 聚合失败: agg function failed [how->mean,dtype->object]
+2026-03-17 16:35:14 - __main__ - INFO - 处理文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:35:14 - app.core.file_processor - INFO - 根据扩展名 .csv 选择读取方法
+2026-03-17 16:35:14 - app.core.file_processor - INFO - 开始读取CSV文件: C:\Users\Smilling\AppData\Local\Temp\gradio\a88431823c03e8001f33061f3cd5d4746cdfe3d3\test_data.csv
+2026-03-17 16:35:14 - app.core.file_processor - INFO - 使用 utf-8 编码读取成功，共 10 行，6 列
+2026-03-17 16:35:14 - app.core.data_analyzer - INFO - 数据分析器初始化完成，数据规模: 10行 x 6列
+2026-03-17 16:35:14 - app.core.file_processor - INFO - 开始生成数据概要
+2026-03-17 16:35:14 - app.core.file_processor - INFO - 数据概要生成完成，共 6 列
+2026-03-17 16:35:14 - __main__ - INFO - ✅ 文件上传成功！共 10 行，6 列
+2026-03-17 16:35:31 - __main__ - INFO - 用户查询: 柱状图显示每个地区的人数
+2026-03-17 16:35:31 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:35:31 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：柱状图显示每个地区的人数\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:35:33 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 233
+2026-03-17 16:35:33 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': ['城市'], 'agg_column': '姓名', 'agg_func': 'count'}
+2026-03-17 16:35:33 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:35:33 - app.core.data_analyzer - INFO - 聚合数据: 按 ['城市'] 分组，计算 姓名 的 count
+2026-03-17 16:35:33 - app.core.data_analyzer - INFO - 聚合完成，得到 4 条结果
+2026-03-17 16:36:15 - __main__ - INFO - 用户查询: 柱状图："绘制部门分布柱状图"
+2026-03-17 16:36:15 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:36:15 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：柱状图：\"绘制部门分布柱状图\"\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:36:16 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 236
+2026-03-17 16:36:16 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': ['部门'], 'agg_column': '部门', 'agg_func': 'count'}
+2026-03-17 16:36:16 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:36:16 - app.core.data_analyzer - INFO - 聚合数据: 按 ['部门'] 分组，计算 部门 的 count
+2026-03-17 16:36:16 - app.core.data_analyzer - ERROR - 聚合失败: cannot insert 部门, already exists
+2026-03-17 16:36:42 - __main__ - INFO - 用户查询: 直方图："绘制年龄分布直方图"
+2026-03-17 16:36:42 - app.agent.deepseek_client - INFO - 发送请求到DeepSeek API
+2026-03-17 16:36:42 - app.agent.deepseek_client - DEBUG - 请求消息: [{"role": "system", "content": "你是一个数据分析助手，只返回JSON格式的响应。"}, {"role": "user", "content": "你是一个数据分析助手。基于用户的问题和数据信息，返回一个结构化的分析指令。\n\n    数据信息：\n    - 列名：['姓名', '年龄', '部门', '工资', '入职年份', '城市']\n\n    用户问题：直方图：\"绘制年龄分布直方图\"\n\n    请分析用户意图，并以JSON格式返回以下结构之一：\n\n    1. 如果是筛选数据：\n    {\"action\": \"filter\", \"column\": \"列名\", \"operator\": \">/</>=/<=/==/!=\", \"value\": 值}\n\n    2. 如果是聚合计算：\n    {\"action\": \"aggregate\", \"group_by\": [\"列名\"], \"agg_column\": \"列名\", \"agg_func\": \"sum/mean/count/min/max\"}\n\n    3. 如果是数据概览：\n    {\"action\": \"summary\"}\n\n    只返回JSON，不要有其他内容。"}]
+2026-03-17 16:36:44 - app.agent.deepseek_client - INFO - DeepSeek响应成功，finish_reason: stop, tokens: 236
+2026-03-17 16:36:44 - __main__ - INFO - 解析结果: {'action': 'aggregate', 'group_by': ['年龄'], 'agg_column': '年龄', 'agg_func': 'count'}
+2026-03-17 16:36:44 - app.core.data_analyzer - INFO - 执行分析指令: aggregate
+2026-03-17 16:36:44 - app.core.data_analyzer - INFO - 聚合数据: 按 ['年龄'] 分组，计算 年龄 的 count
+2026-03-17 16:36:44 - app.core.data_analyzer - ERROR - 聚合失败: cannot insert 年龄, already exists
+2026-03-17 16:41:47 - app.core.file_processor - INFO - 文件处理器初始化完成，支持格式: ['.csv', '.xlsx', '.xls']
+2026-03-17 16:41:47 - app.agent.deepseek_client - INFO - DeepSeek客户端初始化完成，使用模型: deepseek-chat
+2026-03-17 16:41:47 - __main__ - INFO - Gradio应用初始化完成

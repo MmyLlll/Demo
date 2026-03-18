@@ -16,6 +16,8 @@ __pycache__/
 # 上传的文件
 uploads/*
 !uploads/.gitkeep
+.tests/
+.static/
 
 # 日志
 logs/*
@@ -28,3 +30,7 @@ static/plots/*
 # IDE配置
 .vscode/
 .idea/
+
+# 测试文件
+mini_app.py
+test_simple.py

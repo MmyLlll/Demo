@@ -16,7 +16,11 @@ __pycache__/
 # 上传的文件
 uploads/*
 !uploads/.gitkeep
-.tests/
+
+# 测试目录（修正这一行）
+tests/
+
+# 静态文件缓存（如果你有 .static 目录）
 .static/
 
 # 日志
@@ -31,6 +35,6 @@ static/plots/*
 .vscode/
 .idea/
 
-# 测试文件
+# 测试脚本
 mini_app.py
 test_simple.py
